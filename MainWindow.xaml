@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CasePlanning"
         mc:Ignorable="d"
-        Title="CasePlanning" Height="450" Width="800" WindowStartupLocation="CenterScreen">
-    <Grid>
-
+        Title="CasePlanning" Height="800" Width="1000" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="grid1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Menu x:Name="menu" Grid.Row="0"></Menu>
+        <Grid x:Name="grid2" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ScrollViewer x:Name="scrollViewer1" Grid.Column="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"></ScrollViewer>
+            <ScrollViewer x:Name="scrollViewer2" Grid.Column="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"></ScrollViewer>
+        </Grid>
+        <StatusBar x:Name="statusBar" Grid.Row="2"></StatusBar>
     </Grid>
 </Window>
