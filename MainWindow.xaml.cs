@@ -21,5 +21,10 @@ namespace CasePlanning
         {
             InitializeComponent();
         }
+
+        private void ExitClick(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
