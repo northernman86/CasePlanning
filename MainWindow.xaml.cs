@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace CasePlanning
 {
@@ -25,6 +26,15 @@ namespace CasePlanning
         private void ExitClick(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void WindowLoaded(object sender, RoutedEventArgs e)
+        {
+            DispatcherTimer timer = new DispatcherTimer(TimeSpan.FromSeconds(1), DispatcherPriority.Normal, (object s, EventArgs ev) =>
+            {
+                this.textBlockDateTime.Text = DateTime.Now.ToString("G");
+            }, this.Dispatcher);
+            timer.Start();
         }
     }
 }
