@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CasePlanning"
         mc:Ignorable="d"
-        Title="CasePlanning" Height="800" Width="1000" WindowStartupLocation="CenterScreen">
+        Title="CasePlanning" Height="800" Width="1000" WindowStartupLocation="CenterScreen" Loaded="WindowLoaded">
     <Window.Resources>
         <Style TargetType="MenuItem">
             <Setter Property="ItemsControl.Height" Value="30"/>
@@ -33,6 +33,7 @@
                     <MenuItem Header="Exit" Click="ExitClick"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="Settings"></MenuItem>
+                <MenuItem Header="Calendar"></MenuItem>
                 <MenuItem Header="Help"></MenuItem>
             </Menu>
         </Border>
@@ -45,7 +46,9 @@
             <ScrollViewer x:Name="scrollViewer2" Grid.Column="1"></ScrollViewer>
         </Grid>
         <Border Grid.Row="2">
-            <StatusBar x:Name="statusBar" Background="White"></StatusBar>
+            <StatusBar x:Name="statusBar" Background="White">
+                <TextBlock x:Name="textBlockDateTime"/>
+            </StatusBar>
         </Border>
     </Grid>
 </Window>
