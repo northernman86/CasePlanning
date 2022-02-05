@@ -33,8 +33,9 @@
                     <MenuItem Header="Exit" Click="ExitClick"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="Settings"></MenuItem>
-                <MenuItem Header="Calendar"></MenuItem>
-                <MenuItem Header="Help"></MenuItem>
+                <MenuItem Header="Help">
+                    <MenuItem Header="About"></MenuItem>
+                </MenuItem>
             </Menu>
         </Border>
         <Grid x:Name="grid2" Grid.Row="1">
@@ -42,7 +43,11 @@
                 <ColumnDefinition Width="0.3*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <ScrollViewer x:Name="scrollViewer1" Grid.Column="0"></ScrollViewer>
+            <ScrollViewer x:Name="scrollViewer1" Grid.Column="0">
+                <StackPanel>
+                    <Calendar/>
+                </StackPanel>
+            </ScrollViewer>
             <ScrollViewer x:Name="scrollViewer2" Grid.Column="1"></ScrollViewer>
         </Grid>
         <Border Grid.Row="2">
