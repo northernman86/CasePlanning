@@ -52,7 +52,7 @@
         </Grid>
         <Border Grid.Row="2">
             <StatusBar x:Name="statusBar" Background="White">
-                <TextBlock x:Name="textBlockDateTime"/>
+                <TextBlock x:Name="textBlockDateTime" FontFamily="Lucida Console" FontSize="15"/>
             </StatusBar>
         </Border>
     </Grid>
