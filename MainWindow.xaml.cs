@@ -34,6 +34,13 @@ namespace CasePlanning
             //
         }
 
+        private void About_Click(object sender, RoutedEventArgs e)
+        {
+            About about = new About();
+            about.Owner = this;
+            about.ShowDialog();
+        }
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             DispatcherTimer timer = new DispatcherTimer(TimeSpan.FromSeconds(1), DispatcherPriority.Normal, (object s, EventArgs ev) =>
@@ -41,6 +48,6 @@ namespace CasePlanning
                 this.textBlockDateTime.Text = DateTime.Now.ToString("G");
             }, this.Dispatcher);
             timer.Start();
-        }
+        }        
     }
 }
