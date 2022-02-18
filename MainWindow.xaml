@@ -20,6 +20,11 @@
             <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
             <Setter Property="HorizontalScrollBarVisibility" Value="Auto"/>
         </Style>
+        <Style x:Key="sepStyle">
+            <Setter Property="ItemsControl.Background" Value="Black"/>
+            <Setter Property="ItemsControl.Width" Value="1"/>
+            <Setter Property="ItemsControl.HorizontalAlignment" Value="Left"/>
+        </Style>
     </Window.Resources>
     <Grid x:Name="grid1">
         <Grid.RowDefinitions>
@@ -61,7 +66,20 @@
         </Grid>
         <Border Grid.Row="2">
             <StatusBar x:Name="statusBar" Background="White">
+                <Ellipse Stroke="Black" Width="18" Height="18" Fill="White">
+                    <Ellipse.Triggers>
+                        <EventTrigger RoutedEvent="Window.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ColorAnimation Storyboard.TargetProperty="Fill.Color" To="Black" Duration="0:0:0.5" AutoReverse="True" RepeatBehavior="Forever"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Ellipse.Triggers>
+                </Ellipse>
+                <Separator Style="{StaticResource sepStyle}"/>
                 <TextBlock x:Name="textBlockDateTime" FontFamily="Lucida Console" FontSize="15"/>
+                <Separator Style="{StaticResource sepStyle}"/>
             </StatusBar>
         </Border>
     </Grid>
