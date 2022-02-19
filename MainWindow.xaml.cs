@@ -48,6 +48,9 @@ namespace CasePlanning
                 this.textBlockDateTime.Text = DateTime.Now.ToString("G");
             }, this.Dispatcher);
             timer.Start();
-        }        
+
+            textBlockEnv1.Text = "Machinename: " + Environment.MachineName;
+            textBlockEnv2.Text = "Username: " + Environment.UserName;
+        }  
     }
 }

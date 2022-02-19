@@ -25,6 +25,13 @@
             <Setter Property="ItemsControl.Width" Value="1"/>
             <Setter Property="ItemsControl.HorizontalAlignment" Value="Left"/>
         </Style>
+        <Style x:Key="tBsBStyle">
+            <Setter Property="ItemsControl.FontSize" Value="15"/>
+        </Style>
+        <Style TargetType="GroupBox">
+            <Setter Property="ItemsControl.FontSize" Value="15"/>
+            <Setter Property="ItemsControl.BorderBrush" Value="Black"/>
+        </Style>
     </Window.Resources>
     <Grid x:Name="grid1">
         <Grid.RowDefinitions>
@@ -58,6 +65,11 @@
                     <Viewbox Grid.Row="0">
                         <Calendar x:Name="calendar" Background="White" SelectedDatesChanged="Calendar_SelectedDatesChanged" Language="en-EN"></Calendar>
                     </Viewbox>
+                    <GroupBox Grid.Row="1" Header="Cases">
+                        <StackPanel>
+                            
+                        </StackPanel>
+                    </GroupBox>
                 </Grid>
             </ScrollViewer>
             <ScrollViewer x:Name="scrollViewer2" Grid.Column="1">
@@ -78,7 +90,11 @@
                     </Ellipse.Triggers>
                 </Ellipse>
                 <Separator Style="{StaticResource sepStyle}"/>
-                <TextBlock x:Name="textBlockDateTime" FontFamily="Lucida Console" FontSize="15"/>
+                <TextBlock x:Name="textBlockDateTime" Style="{StaticResource tBsBStyle}"/>
+                <Separator Style="{StaticResource sepStyle}"/>
+                <TextBlock x:Name="textBlockEnv1" Style="{StaticResource tBsBStyle}"/>
+                <Separator Style="{StaticResource sepStyle}"/>
+                <TextBlock x:Name="textBlockEnv2" Style="{StaticResource tBsBStyle}"/>
                 <Separator Style="{StaticResource sepStyle}"/>
             </StatusBar>
         </Border>
