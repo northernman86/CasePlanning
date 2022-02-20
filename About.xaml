@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CasePlanning"
         mc:Ignorable="d"
-        Title="About" Height="200" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Topmost="True" Background="White">
+        Title="About" Height="200" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Topmost="True" Background="White">
     <Window.Resources>
         <Style TargetType="TextBlock">
             <Setter Property="ItemsControl.VerticalAlignment" Value="Center"/>
