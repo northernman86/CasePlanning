@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CasePlanning"
         mc:Ignorable="d"
-        Title="CasePlanning" Height="800" MinHeight="800" Width="1000" MinWidth="1000" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+        Title="CasePlanning" Height="800" MinHeight="800" Width="1000" MinWidth="1000" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" ResizeMode="CanResizeWithGrip">
     <Window.Resources>
         <Style TargetType="MenuItem">
             <Setter Property="ItemsControl.Height" Value="30"/>
