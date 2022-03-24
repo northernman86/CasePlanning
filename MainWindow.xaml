@@ -67,7 +67,7 @@
                     </Viewbox>
                     <GroupBox Grid.Row="1" Header="Cases">
                         <StackPanel>
-                            
+
                         </StackPanel>
                     </GroupBox>
                 </Grid>
