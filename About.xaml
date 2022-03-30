@@ -5,16 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CasePlanning"
         mc:Ignorable="d"
-        Title="About" Height="200" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Topmost="True" Background="White">
+        Title="About" Height="200" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" AllowsTransparency="False" WindowStyle="None" Background="Transparent" MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <Window.Resources>
+        <Style TargetType="{x:Type Button}" x:Key="btnAboutWindow">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Margin="5">
+                            <Ellipse Width="15" Height="15" Fill="Black"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
         <Style TargetType="TextBlock">
             <Setter Property="ItemsControl.VerticalAlignment" Value="Center"/>
             <Setter Property="ItemsControl.HorizontalAlignment" Value="Center"/>
         </Style>
     </Window.Resources>
+    <Window.Template>
+        <ControlTemplate TargetType="Window">
+            <Border Background="White" BorderBrush="Black" BorderThickness="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Width="15" Height="15" Margin="5">
+                            <Image.Source>
+                                cplan.ico
+                            </Image.Source>
+                        </Image>
+                        <TextBlock Grid.Column="1" Text="{TemplateBinding Title}" HorizontalAlignment="Left" Margin="5 0 0 0" FontSize="15"/>
+                        <Button Grid.Column="2" ToolTip="Close" Style="{StaticResource btnAboutWindow}" Click="CloseAbout_Click"/>
+                    </Grid>
+                    <Border Grid.Row="1">
+                        <ContentPresenter/>
+                    </Border>
+                </Grid>
+            </Border>
+        </ControlTemplate>
+    </Window.Template>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="70"/>
             <RowDefinition Height="20"/>
             <RowDefinition Height="20"/>
