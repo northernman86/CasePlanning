@@ -51,6 +51,33 @@ namespace CasePlanning
 
             textBlockEnv1.Text = "Machinename: " + Environment.MachineName;
             textBlockEnv2.Text = "Username: " + Environment.UserName;
-        }  
+        }
+
+        private void BtnMin_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.WindowState = WindowState.Minimized;
+        }
+
+        private void BtnMax_Click(object sender, RoutedEventArgs e)
+        {
+            if (Application.Current.MainWindow.WindowState == WindowState.Maximized)
+            {
+                Application.Current.MainWindow.WindowState = WindowState.Normal;
+            }
+            else
+            {
+                Application.Current.MainWindow.WindowState = WindowState.Maximized;
+            }
+        }
+
+        private void BtnClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
     }
 }
