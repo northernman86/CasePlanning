@@ -79,5 +79,12 @@ namespace CasePlanning
         {
             this.DragMove();
         }
+
+        private void Settings_Click(object sender, RoutedEventArgs e)
+        {
+            Settings settings = new Settings();
+            settings.Owner = this;
+            settings.ShowDialog();
+        }
     }
 }
