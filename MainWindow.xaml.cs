@@ -49,6 +49,7 @@ namespace CasePlanning
             }, this.Dispatcher);
             timer.Start();
 
+            textBlockTimeZone.Text = TimeZoneInfo.Local.DisplayName.ToString();
             textBlockEnv1.Text = "Machinename: " + Environment.MachineName;
             textBlockEnv2.Text = "Username: " + Environment.UserName;
         }

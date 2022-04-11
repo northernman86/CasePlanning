@@ -159,6 +159,8 @@
                 <Separator Style="{StaticResource sepStyle}"/>
                 <TextBlock x:Name="textBlockDateTime" Style="{StaticResource tBsBStyle}"/>
                 <Separator Style="{StaticResource sepStyle}"/>
+                <TextBlock x:Name="textBlockTimeZone" Style="{StaticResource tBsBStyle}"/>
+                <Separator Style="{StaticResource sepStyle}"/>
                 <TextBlock x:Name="textBlockEnv1" Style="{StaticResource tBsBStyle}"/>
                 <Separator Style="{StaticResource sepStyle}"/>
                 <TextBlock x:Name="textBlockEnv2" Style="{StaticResource tBsBStyle}"/>
