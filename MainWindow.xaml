@@ -152,6 +152,7 @@
                         </EventTrigger>
                     </Ellipse.Triggers>
                 </Ellipse>
+                <TextBlock x:Name="textBlockState" Style="{StaticResource tBsBStyle}"/>
                 <Separator Style="{StaticResource sepStyle}"/>
                 <TextBlock x:Name="textBlockDateTime" Style="{StaticResource tBsBStyle}"/>
                 <Separator Style="{StaticResource sepStyle}"/>
