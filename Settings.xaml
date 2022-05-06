@@ -33,7 +33,7 @@
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
-                        <Image Grid.Column="0" Width="15" Height="15" Margin="5" Source="/Images/cplan.ico"/>
+                        <Image Grid.Column="0" Width="15" Height="15" Margin="5" Source="/Images/caseplan.ico"/>
                         <TextBlock Grid.Column="1" Text="{TemplateBinding Title}" HorizontalAlignment="Left" Margin="5 0 0 0" FontSize="15"/>
                         <Button Grid.Column="2" ToolTip="Close" Style="{StaticResource btnSettingsWindow}" Click="CloseSettings_Click"/>
                     </Grid>

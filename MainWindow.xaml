@@ -83,7 +83,7 @@
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
-                        <Image Grid.Column="0" Width="25" Height="25" Margin="5" OpacityMask="{x:Null}" Source="/Images/cplan.ico"/>
+                        <Image Grid.Column="0" Width="25" Height="25" Margin="5" Source="/Images/caseplan.ico"/>
                         <TextBlock Grid.Column="1" Text="{TemplateBinding Title}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5 0 0 0" FontSize="20" Foreground="Black"/>
                         <Button x:Name="btnMin" Grid.Column="2" ToolTip="Minimize" Style="{StaticResource btnMinWindow}" Click="BtnMin_Click"/>
                         <Button x:Name="btnMax" Grid.Column="3" ToolTip="Maximize/Restore Down" Style="{StaticResource btnMaxWindow}" Click="BtnMax_Click"/>
