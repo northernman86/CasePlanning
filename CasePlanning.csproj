@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>cplan.ico</ApplicationIcon>
+    <ApplicationIcon>caseplan.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="cplan.ico" />
+    <Content Include="caseplan.ico" />
   </ItemGroup>
 
   <ItemGroup>
