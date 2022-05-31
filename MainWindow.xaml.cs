@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +33,16 @@ namespace CasePlanning
         {
             DateTime? selectedDate = calendar.SelectedDate;
             //
+        }
+
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            var url = "https://github.com/northernman86/CasePlanning";
+            var info = new ProcessStartInfo(url)
+            {
+                UseShellExecute = true,
+            };
+            Process.Start(info);
         }
 
         private void About_Click(object sender, RoutedEventArgs e)
