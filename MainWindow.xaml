@@ -111,6 +111,7 @@
                 <MenuItem Header="View"></MenuItem>
                 <MenuItem Header="Settings" Click="Settings_Click"></MenuItem>
                 <MenuItem Header="Help">
+                    <Hyperlink Click="Hyperlink_Click">Code on GitHub</Hyperlink>
                     <MenuItem Header="About" Click="About_Click"></MenuItem>
                 </MenuItem>
             </Menu>
