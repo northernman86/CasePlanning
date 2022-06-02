@@ -109,6 +109,7 @@
                 </MenuItem>
                 <MenuItem Header="Edit"></MenuItem>
                 <MenuItem Header="View"></MenuItem>
+                <MenuItem Header="Cases"></MenuItem>
                 <MenuItem Header="Settings" Click="Settings_Click"></MenuItem>
                 <MenuItem Header="Help">
                     <Hyperlink Click="Hyperlink_Click">Code on GitHub</Hyperlink>
