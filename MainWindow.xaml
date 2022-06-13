@@ -107,7 +107,14 @@
                 <MenuItem Header="File">
                     <MenuItem Header="Exit" Click="Exit_Click"></MenuItem>
                 </MenuItem>
-                <MenuItem Header="Edit"></MenuItem>
+                <MenuItem Header="Edit">
+                    <MenuItem Header="Undo" Command="Undo"/>
+                    <MenuItem Header="Redo" Command="Redo"/>
+                    <MenuItem Header="Cut" Command="Cut"/>
+                    <MenuItem Header="Copy" Command="Copy"/>
+                    <MenuItem Header="Paste" Command="Paste"/>
+                    <MenuItem Header="Delete" Command="Delete"/>
+                </MenuItem>
                 <MenuItem Header="View"></MenuItem>
                 <MenuItem Header="Cases"></MenuItem>
                 <MenuItem Header="Settings" Click="Settings_Click"></MenuItem>
