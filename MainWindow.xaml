@@ -105,7 +105,10 @@
         <Border Grid.Row="0">
             <Menu x:Name="menu" Grid.Row="0" Background="White">
                 <MenuItem Header="File">
-                    <MenuItem Header="Exit" Click="Exit_Click"></MenuItem>
+                    <MenuItem Header="New">
+                        
+                    </MenuItem>
+                    <MenuItem Header="Exit" Click="Exit_Click"/>
                 </MenuItem>
                 <MenuItem Header="Edit">
                     <MenuItem Header="Undo" Command="Undo"/>
@@ -117,10 +120,10 @@
                 </MenuItem>
                 <MenuItem Header="View"></MenuItem>
                 <MenuItem Header="Cases"></MenuItem>
-                <MenuItem Header="Settings" Click="Settings_Click"></MenuItem>
+                <MenuItem Header="Settings" Click="Settings_Click"/>
                 <MenuItem Header="Help">
                     <Hyperlink Click="Hyperlink_Click">Code on GitHub</Hyperlink>
-                    <MenuItem Header="About" Click="About_Click"></MenuItem>
+                    <MenuItem Header="About" Click="About_Click"/>
                 </MenuItem>
             </Menu>
         </Border>
